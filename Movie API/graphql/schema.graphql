@@ -1,3 +1,9 @@
-type Query {
+type Nicolas { # Nicolas type 정의
   name: String!
+  age: Int!
+  gender: String!
+}
+
+type Query {
+  person: Nicolas!
 }
