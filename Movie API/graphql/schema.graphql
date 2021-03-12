@@ -7,5 +7,5 @@ type Person { # Person type 정의
 
 type Query {
   people: [Person]! # person 여러개를 보낼 경우 -> people query로 정의
-  person(id: Int!): Person # 해당 id를 가진 사람이 없을 수도 있으니까 '!'(필수사항) 넣지 않음
+  person(id: Int!): Person! # 해당 id를 가진 사람이 없을 수도 있으니까 '!'(필수로 뭘 리턴해야함) 넣지 않음
 }
