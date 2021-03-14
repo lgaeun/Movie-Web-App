@@ -12,3 +12,6 @@
   - mutation: 서버 혹은 db에서 정보를 바꾸는 작업을 할 떄(=즉 data mutate)
 
 - graphql-playground: localhost:4000(root)에 나오는 db를 test할 수 있게 해주는 페이지
+- query와 mutation
+  - query: 데이터를 읽(R)는데 사용
+  - mutation: 데이터를 변화(CUD)시키는데 사용
