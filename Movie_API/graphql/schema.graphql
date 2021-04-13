@@ -8,7 +8,7 @@ type Movie { # Moive type 정의
 }
 
 type Query {
-  movies: [Movie]! # person 여러개를 보낼 경우 -> people query로 정의
+  movies(limit: Int, rating: Float): [Movie]!
   # movie(id: Int!): Movie # 해당 id를 가진 사람이 없을 수도 있으니까 '!'(필수로 뭘 리턴해야함) 넣지 않음
 }
 
