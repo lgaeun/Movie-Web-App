@@ -9,7 +9,8 @@
     "@babel/node": "^7.13.0",
     "@babel/preset-env": "^7.13.5",
     "graphql-playground-html": "^1.6.29",
-    "graphql-yoga": "^1.18.3"
+    "graphql-yoga": "^1.18.3",
+    "node-fetch": "^2.6.1"
   },
   "scripts": {
     "start": "babel-node index.js",
