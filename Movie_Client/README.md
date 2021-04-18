@@ -11,3 +11,7 @@
   - home.js: const에 query입력하는 형식은 const A = gql`{query}`
   - 그다음 react-hook(import from @apollo/client)의 useQeury(A)를 사용해 uery를 사용할 수 있다
   - 이 때, loading, error, data를 가져와서 표시할 수 
+
+### 1.4 Data & Apollo Dev Tools
+  - check: 항상 data를 쓰기 전에 data가 있는지 확인해야한다(err: cannot read property 'blahblah' undefinded)
+  - (data && ~~)
