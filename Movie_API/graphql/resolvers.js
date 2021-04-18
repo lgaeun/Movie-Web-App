@@ -1,10 +1,11 @@
 // resolvers: something that resolves a query
 // import { addMoive, deleteMovie, getById, getMoives } from "./db";
-import { getMovies } from "./db";
+import { getMovies, getMovie } from "./db";
 
 const resolvers = {
   Query: {
     movies: (_, { rating, limit }) => getMovies(limit, rating),
+    movie: (_, { id }) => getMovie(id),
   },
 };
 

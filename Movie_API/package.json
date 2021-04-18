@@ -7,8 +7,8 @@
     "@babel/cli": "^7.13.0",
     "@babel/core": "^7.13.1",
     "@babel/preset-env": "^7.13.5",
+    "axios": "^0.21.1",
     "graphql-playground-html": "^1.6.29",
-    "graphql-yoga": "^1.18.3",
     "node-fetch": "^2.6.1"
   },
   "scripts": {
@@ -16,6 +16,7 @@
     "dev": "nodemon --exec babel-node index.js"
   },
   "devDependencies": {
-    "@babel/node": "^7.13.13"
+    "@babel/node": "^7.13.13",
+    "graphql-yoga": "^1.18.3"
   }
 }

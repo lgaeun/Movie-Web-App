@@ -2,14 +2,14 @@ type Movie { # Moive type 정의
   id: Int!
   title: String!
   rating: Float!
-  summary: String!
   language: String!
   medium_cover_image: String!
+  description_intro: String!
 }
 
 type Query {
   movies(limit: Int, rating: Float): [Movie]!
-  # movie(id: Int!): Movie # 해당 id를 가진 사람이 없을 수도 있으니까 '!'(필수로 뭘 리턴해야함) 넣지 않음
+  movie(id: Int!): Movie! # 해당 id를 가진 사람이 없을 수도 있으니까 '!'(필수로 뭘 리턴해야함) 넣지 않음
 }
 
 # Muataion: Database 상태를 변화시킬 때 사용
