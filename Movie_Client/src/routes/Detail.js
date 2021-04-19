@@ -33,7 +33,7 @@ const Container = styled.div`
 
 const Column = styled.div`
   margin-left: 10px;
-  width: 50px;
+  width: 700px;
 `;
 
 const Title = styled.h1`
@@ -69,12 +69,15 @@ export default () => {
       <Column>
         <Title>{loading ? "Loading..." : data.movie.title}</Title>
         <Subtitle>
-          {data?.movie?.language} | {data?.movie?.rating}
+          {data?.movie?.language} · {data?.movie?.rating}
         </Subtitle>
         <Description>{data?.movie?.description_intro}</Description>
+        {<br />}
+        <Description>
+          {"suggesting movie id: " + data?.suggestions?.id}
+        </Description>
       </Column>
       <Poster bg={data?.movie?.medium_cover_image}></Poster>
-      {data?.suggestions?.medium_cover_image}
     </Container>
   );
 };
