@@ -23,6 +23,13 @@ export const getMovie = (id) => {
     .then((json) => json.data.movie);
 };
 
+export const getSuggestions = (id) => {
+  let REQUEST_URL = `${MOVIE_DETAILS_URL}?movie_id=${id}`;
+  return fetch(REQUEST_URL)
+    .then((res) => res.json())
+    .then((json) => json.data.movie);
+};
+
 //-------------------예시 형식--------------------
 
 // DB를 통해 하고 싶은 함수들 정의

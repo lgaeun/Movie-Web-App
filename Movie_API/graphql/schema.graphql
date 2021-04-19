@@ -10,6 +10,7 @@ type Movie { # Moive type 정의
 type Query {
   movies(limit: Int, rating: Float): [Movie]!
   movie(id: Int!): Movie! # 해당 id를 가진 사람이 없을 수도 있으니까 '!'(필수로 뭘 리턴해야함) 넣지 않음
+  suggestions(id: Int!): Movie!
 }
 
 # Muataion: Database 상태를 변화시킬 때 사용
