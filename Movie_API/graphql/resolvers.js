@@ -1,5 +1,4 @@
 // resolvers: something that resolves a query
-// import { addMoive, deleteMovie, getById, getMoives } from "./db";
 import { getMovies, getMovie, getSuggestions } from "./db";
 
 const resolvers = {
